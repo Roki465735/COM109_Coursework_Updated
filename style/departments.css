@@ -1,0 +1,189 @@
+/* ============================ Page Header Section ============================ */
+
+/* Page Header Styles */
+.departments-header {
+  height: 70vh;
+  background-image: url("../assets/campus2.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.departments-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.departments-content {
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.departments-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.departments-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.about-link {
+  color: #f0db4f;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.about-link:hover {
+  border-color: #f0db4f;
+  color: #fff;
+}
+
+/* ============================ Departments Section ============================ */
+
+.department-directory {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle a {
+  color: #004080;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.department-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.department-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.department-card:hover {
+  transform: translateY(-8px);
+}
+
+.department-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.department-card h3 {
+  font-size: 1.4rem;
+  color: #002855;
+  margin-bottom: 0.5rem;
+}
+
+.department-card p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.department-card .btn {
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.department-card .btn:hover {
+  background-color: #002855;
+}
+
+/* ============================ Departments Heads Section ============================ */
+
+.faculty-section {
+  padding: 4rem 2rem;
+  background-color: #f0f4f8;
+  text-align: center;
+}
+
+.faculty-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #002855;
+}
+
+.faculty-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.faculty-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.faculty-card:hover {
+  transform: translateY(-5px);
+}
+
+.faculty-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+.faculty-card p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.faculty-card a {
+  color: #004080;
+  text-decoration: none;
+}
+
+.faculty-card a:hover {
+  text-decoration: underline;
+}

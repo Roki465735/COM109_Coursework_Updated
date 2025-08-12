@@ -1,0 +1,183 @@
+.international-header {
+  background: linear-gradient(135deg, var(--primary-color), #004080);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.international-header h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.international-header p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Info Cards Section */
+.info-section {
+  padding: 3rem 0;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.info-card-icon {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.info-card-content {
+  padding: 1.5rem;
+}
+
+.info-card-title {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+/* Student Slider Section */
+.student-section {
+  padding: 3rem 0;
+  background-color: #f0f4f8;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section-title h2 {
+  font-size: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--secondary-color);
+}
+
+.slider-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.student-card {
+  min-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.student-profile {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+}
+
+.student-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--light-color);
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+.student-name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.student-country {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.student-course {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #495057;
+}
+
+.student-quote {
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.student-quote::before,
+.student-quote::after {
+  content: '"';
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  opacity: 0.5;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.slider-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+  background-color: var(--primary-color);
+}

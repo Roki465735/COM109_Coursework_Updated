@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulster University || International</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/international.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTTXRR6hRJqVzWnQx+t3zMEFvZ2m6K5aXzUQnM+V8lqv3Gr1E2lGr3WQ9iXMB/cwB+N9zKeFbg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <img class="logo" src="./assets/logo.png" />
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li>
+            <a href="international.html">International Students</a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <section class="international-header">
+        <div class="container">
+          <h1>International Students</h1>
+          <p>
+            Join our vibrant global community at Ulster University. With
+            students from over 100 countries, we offer a truly international
+            experience with world-class education and support.
+          </p>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="container">
+          <h2>Why Choose Ulster University?</h2>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Global Recognition</h3>
+                <p>
+                  Our degrees are internationally recognized, opening doors to
+                  global career opportunities. We rank among the top
+                  universities worldwide for graduate employability.
+                </p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-hands-helping"></i>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Dedicated Support</h3>
+                <p>
+                  From visa applications to accommodation, our International
+                  Student Support team provides personalized assistance at every
+                  step of your journey.
+                </p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="info-card-content">
+                <h3 class="info-card-title">Campus Life</h3>
+                <p>
+                  Experience vibrant campus life with over 100 student
+                  societies, sports clubs, and cultural events that celebrate
+                  diversity and foster lifelong friendships.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="student-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Hear From Our Students</h2>
+          </div>
+          <div class="slider-container">
+            <div class="slider" id="slider">
+              <div class="student-card">
+                <div class="student-profile">
+                  <img
+                    src="./assets/rocky.jpg"
+                    alt="Nazmul Arfat Roki"
+                    class="student-img"
+                  />
+                  <h3 class="student-name">Nazmul Arfat Roki</h3>
+                  <span class="student-country">Bangladesh</span>
+                  <p class="student-course">BSc in Data Science</p>
+                  <p class="student-quote">
+                    The multicultural environment at Ulster helped me grow both
+                    academically and personally. The support for international
+                    students is exceptional, making the transition smooth and
+                    enjoyable.
+                  </p>
+                </div>
+              </div>
+              <div class="student-card">
+                <div class="student-profile">
+                  <img
+                    src="./assets/farzana.jpg"
+                    alt="Farzana Akter Mumu"
+                    class="student-img"
+                  />
+                  <h3 class="student-name">Farzana Akter Mumu</h3>
+                  <span class="student-country">Bangladesh</span>
+                  <p class="student-course">BA in Business Administration</p>
+                  <p class="student-quote">
+                    Studying at Ulster gave me opportunities to connect with
+                    students from all over the world. The practical approach to
+                    business education prepared me well for my career.
+                  </p>
+                </div>
+              </div>
+              <div class="student-card">
+                <div class="student-profile">
+                  <img
+                    src="./assets/sium.jpg"
+                    alt="Md Jahirul Islam"
+                    class="student-img"
+                  />
+                  <h3 class="student-name">Md Jahirul Islam</h3>
+                  <span class="student-country">Bangladesh</span>
+                  <p class="student-course">BEng in Mechanical Engineering</p>
+                  <p class="student-quote">
+                    The hands-on learning approach and industry connections at
+                    Ulster are outstanding. I gained real-world experience
+                    through placements that gave me a competitive edge.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-nav" id="slider-nav">
+              <div class="slider-dot active" data-index="0"></div>
+              <div class="slider-dot" data-index="1"></div>
+              <div class="slider-dot" data-index="2"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script/navbar.js"></script>
+    <script src="./script/international.js"></script>
+  </body>
+</html>

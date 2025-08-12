@@ -1,0 +1,628 @@
+/* General Styles */
+:root {
+  --primary-color: #003366;
+  --secondary-color: #e6a400;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --success-color: #28a745;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+  --danger-color: #dc3545;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-color);
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+/* Reset & Base Styles */
+
+/* Navbar Styles */
+.navbar {
+  background-color: #002855;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #f0db4f;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ======================================================================== */
+/*=============================== Home Page =============================== */
+/*========================================================================  */
+
+/*============================= Hero Section ============================= */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/UlsterUniversity.png"); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero-content {
+  color: #fff;
+  max-width: 800px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #f0db4f;
+  color: #002855;
+}
+
+.primary-btn:hover {
+  background-color: #ffd700;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #f0db4f;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #f0db4f;
+  color: #002855;
+}
+
+/* ============================= About section ============================= */
+
+.about-section {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #002855;
+}
+
+.about-content {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================= Department Section ============================= */
+
+/* Departments Preview Section */
+.departments-preview {
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.department-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.department-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.department-card i {
+  margin-bottom: 1rem;
+  color: #004080;
+  transition: color 0.3s ease;
+}
+
+.department-card:hover i {
+  color: #f0db4f;
+}
+
+.department-card h3 {
+  color: #002855;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.department-card p {
+  font-size: 0.95rem;
+  color: #444;
+  padding: 0 1rem;
+}
+
+.departments-link {
+  margin-top: 3rem;
+}
+
+.departments-link a {
+  font-weight: bold;
+  color: #004080;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.departments-link a:hover {
+  color: #f0db4f;
+}
+
+/* ============================= Programs Section ============================= */
+
+/* Courses Section */
+.courses-section {
+  padding: 4rem 1rem;
+  background-color: #f9fbfd;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.course-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.course-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #004080;
+}
+
+.course-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.badge {
+  background-color: #f0db4f;
+  color: #333;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* CTA Button */
+.cta-container {
+  margin-top: 3rem;
+}
+
+.btn-cta {
+  padding: 0.8rem 2rem;
+  background-color: #002855;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #004080;
+}
+
+/* ============================= Call to Action Section ============================= */
+.cta-section {
+  background-color: #e5f1ff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  color: #002855;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.cta-btn {
+  text-decoration: none;
+  padding: 0.9rem 1.8rem;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-btn.primary {
+  background-color: #004080;
+  color: white;
+}
+
+.cta-btn.primary:hover {
+  background-color: #002855;
+}
+
+.cta-btn.secondary {
+  background-color: transparent;
+  border: 2px solid #004080;
+  color: #004080;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #004080;
+  color: white;
+}
+
+/* Modal Animation */
+@keyframes modalopen {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #002855;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 220px;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ============================= About section ============================= */
+
+  .about-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-btn {
+    margin: 1.5rem auto 0;
+  }
+
+  /* ============================= Programs Section ============================= */
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  /* ============================= Call To Action Section ============================= */
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /*=========================== Departments Page ============================ */
+
+  .departments-content h1 {
+    font-size: 2rem;
+  }
+  .departments-content p {
+    font-size: 1rem;
+  }
+
+  /*=========================== Cources Page ============================ */
+
+  .modal-row {
+    flex-direction: column;
+  }
+
+  .modal-img {
+    width: 100%;
+    min-width: auto;
+  }
+
+  /*=========================== Contact Page ============================ */
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 75vh;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulster University || Departments</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/departments.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTTXRR6hRJqVzWnQx+t3zMEFvZ2m6K5aXzUQnM+V8lqv3Gr1E2lGr3WQ9iXMB/cwB+N9zKeFbg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <img class="logo" src="./assets/fns university.png" />
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li>
+            <a href="international.html">International Students</a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Page Header Section -->
+      <section class="departments-header">
+        <div class="departments-overlay">
+          <div class="departments-content">
+            <h1 style="color: aliceblue">Explore Our Departments</h1>
+            <p>
+              Our university offers a diverse range of departments designed to
+              meet the academic and professional needs of students from around
+              the world.
+            </p>
+            <a href="about.html" class="about-link"
+              >Learn more about our mission & history →</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Departments Section -->
+      <section class="department-directory">
+        <h2 class="section-title">Explore Our Departments</h2>
+        <p class="section-subtitle">
+          Discover diverse academic programs designed for both undergraduate and
+          postgraduate students.
+          <a href="about.html">Learn more about our university.</a>
+        </p>
+
+        <div class="department-grid">
+          <!-- Department Card 1 -->
+          <div class="department-card">
+            <img
+              src="./assets/coputerScience.png"
+              alt="Computer Science Icon"
+            />
+            <h3>Computer Science</h3>
+            <p>
+              Advance in AI, software engineering, and data science with expert
+              faculty and modern labs.
+            </p>
+          </div>
+
+          <!-- Department Card 2 -->
+          <div class="department-card">
+            <img src="./assets/icons/business.png" alt="Business Icon" />
+            <h3>Business & Management</h3>
+            <p>
+              Master global business practices, marketing, and entrepreneurship
+              with hands-on projects.
+            </p>
+            <a href="courses.html#business" class="btn">View Courses</a>
+          </div>
+
+          <!-- Department Card 3 -->
+          <div class="department-card">
+            <img src="./assets/icons/engineering.png" alt="Engineering Icon" />
+            <h3>Engineering</h3>
+            <p>
+              Build your future in civil, mechanical, and electrical engineering
+              with innovation labs.
+            </p>
+            <a href="courses.html#engineering" class="btn">View Courses</a>
+          </div>
+
+          <!-- Add more cards as needed -->
+        </div>
+      </section>
+      <!-- Department Heads -->
+      <section class="faculty-section">
+        <h2>Meet Our Department Heads</h2>
+        <div class="faculty-cards">
+          <div class="faculty-card">
+            <h3>Dr. Alice Johnson</h3>
+            <p><strong>Department:</strong> Computer Science</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:alice.johnson@university.edu"
+                >alice.johnson@university.edu</a
+              >
+            </p>
+            <p><strong>Office Hours:</strong> Mon & Wed, 10AM - 1PM</p>
+            <p><strong>Location:</strong> Building A, Room 204</p>
+          </div>
+
+          <div class="faculty-card">
+            <h3>Prof. Mark Lee</h3>
+            <p><strong>Department:</strong> Business Administration</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:mark.lee@university.edu"
+                >mark.lee@university.edu</a
+              >
+            </p>
+            <p><strong>Office Hours:</strong> Tue & Thu, 2PM - 5PM</p>
+            <p><strong>Location:</strong> Building C, Room 101</p>
+          </div>
+
+          <div class="faculty-card">
+            <h3>Dr. Sara Kim</h3>
+            <p><strong>Department:</strong> Education</p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:sara.kim@university.edu"
+                >sara.kim@university.edu</a
+              >
+            </p>
+            <p><strong>Office Hours:</strong> Mon–Fri, 11AM - 12PM</p>
+            <p><strong>Location:</strong> Building B, Room 310</p>
+          </div>
+        </div>
+      </section>
+      <!-- Call to Action Section -->
+      <section class="cta-section">
+        <div class="cta-container">
+          <h2>Your Future Starts Here</h2>
+          <p>
+            Join a diverse and dynamic learning community. Apply today or
+            connect with an advisor to explore your opportunities.
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="cta-btn primary">Apply Now</a>
+            <a href="contact.html#book-tour" class="cta-btn secondary"
+              >Book a Campus Tour</a
+            >
+            <a href="contact.html#advisor" class="cta-btn secondary"
+              >Talk to an Advisor</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script/navbar.js"></script>
+  </body>
+</html>
