@@ -105,10 +105,11 @@ a {
 /*========================================================================  */
 
 /*============================= Hero Section ============================= */
+/*campus pic changed*/
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url("../assets/UlsterUniversity.png"); /* replace with your image path */
+  background-image: url("../assets/FNS\ Campus.png"); /* replace with your image path */
   background-size: cover;
   background-position: center;
   display: flex;
