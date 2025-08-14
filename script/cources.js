@@ -1,4 +1,5 @@
 // Sample course data
+//Courses data in an array
 const courses = [
   {
     id: 1,
