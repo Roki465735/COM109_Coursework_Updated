@@ -1,4 +1,5 @@
 // Sample course data
+//Courses data in an array
 const courses = [
   {
     id: 1,
@@ -173,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Display courses in the grid
+//function to display all courses in course page
 function displayCourses(coursesToDisplay) {
   coursesGrid.innerHTML = "";
 
