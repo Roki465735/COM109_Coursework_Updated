@@ -105,10 +105,11 @@ a {
 /*========================================================================  */
 
 /*============================= Hero Section ============================= */
+/*campus pic changed*/
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url("../assets/UlsterUniversity.png"); /* replace with your image path */
+  background-image: url("../assets/FNS\ Campus.png"); /* replace with your image path */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -235,6 +236,7 @@ a {
 /* ============================= Department Section ============================= */
 
 /* Departments Preview Section */
+/*CSS for department section of homepage*/
 .departments-preview {
   padding: 4rem 2rem;
   background-color: #ffffff;
@@ -315,6 +317,7 @@ a {
 /* ============================= Programs Section ============================= */
 
 /* Courses Section */
+/*CSS for program section in homepage*/
 .courses-section {
   padding: 4rem 1rem;
   background-color: #f9fbfd;
@@ -397,6 +400,7 @@ a {
 }
 
 /* ============================= Call to Action Section ============================= */
+/*action section CSS for homepage*/
 .cta-section {
   background-color: #e5f1ff;
   padding: 4rem 2rem;
