@@ -1,0 +1,148 @@
+/* Cookie Modal Styles */
+.cookie-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.cookie-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cookie-modal-content {
+  background-color: white;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.cookie-modal.active .cookie-modal-content {
+  transform: translateY(0);
+}
+
+.cookie-modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.cookie-modal-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cookie-modal-body {
+  padding: 20px;
+}
+
+.cookie-modal-body p {
+  margin: 0 0 20px 0;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.cookie-types {
+  margin-bottom: 20px;
+}
+
+.cookie-type {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.cookie-type input {
+  margin-right: 10px;
+}
+
+.cookie-type label {
+  font-weight: 500;
+  color: #333;
+  margin-right: 10px;
+}
+
+.cookie-info {
+  font-size: 12px;
+  color: #777;
+  margin-left: auto;
+}
+
+.cookie-modal-footer {
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cookie-modal-footer button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.primary-btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: #1b5e20;
+}
+
+.secondary-btn {
+  background-color: white;
+  color: #2e7d32;
+  border: 1px solid #2e7d32;
+}
+
+.secondary-btn:hover {
+  background-color: #f1f8e9;
+}
+
+.tertiary-btn {
+  background-color: transparent;
+  color: #666;
+  border: none;
+}
+
+.tertiary-btn:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .cookie-modal-footer {
+    flex-direction: column;
+  }
+
+  .cookie-modal-footer button {
+    width: 100%;
+  }
+}
