@@ -2,11 +2,11 @@
 /*=========================== Contact Page ============================ */
 /*========================================================================  */
 
-/* Contact Header */
+/* Contact Header and adjusting color  */
 .contact-header {
   background: linear-gradient(135deg, var(--primary-color), #004080);
   color: white;
-  padding: 4rem 0;
+  padding: 3rem 0; 
   text-align: center;
 }
 
