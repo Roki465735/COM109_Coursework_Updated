@@ -27,7 +27,7 @@ function deleteCookie(name) {
   setCookie(name, "", -1);
 }
 
-// Save form data to cookies when inputs change
+// function for saving data as cookies
 function setupCookieSaving() {
   const rememberMe = document.getElementById("rememberMe");
 
@@ -35,7 +35,7 @@ function setupCookieSaving() {
     const field = document.getElementById(fieldId);
     field.addEventListener("input", function () {
       if (rememberMe.checked) {
-        setCookie(cookieName, this.value, 30); // Store for 30 days if checked
+        setCookie(cookieName, this.value, 30); // storing data for 30 days
       }
     });
   }
@@ -72,7 +72,7 @@ function showCookieBanner() {
     .getElementById("accept-cookie")
     .addEventListener("click", function () {
       setCookie("acceptedCookies", "true", 365);
-      deleteCookie("rejectedCookies"); // Remove rejection if they change their mind
+      deleteCookie("rejectedCookies"); // if they change their mind they would have rejection
       document.getElementById("cookie-banner").classList.add("hidden");
     });
 
@@ -91,10 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
   setupCookieSaving();
   loadSavedData();
   setupFormSubmission();
-  showCookieBanner(); // 👈 Add this line
+  showCookieBanner(); 
 });
 
-// Load saved form data when page loads
+// when page loads,data saved as form
 function loadSavedData() {
   const remember = getCookie("rememberContactInfo") === "true";
   document.getElementById("rememberMe").checked = remember;
@@ -127,7 +127,7 @@ function setupFormSubmission() {
     // Here you would typically send the data to a server
     // For this example, we'll just show an alert
     alert(
-      `Thank you, ${name}! Your message has been received. We'll contact you at ${email} soon.`
+      `Thank you, ${name}! Your message has been received. We'll contact you at ${email} soon.joy bangla`
     );
 
     // Clear cookies if "Remember Me" is not checked
