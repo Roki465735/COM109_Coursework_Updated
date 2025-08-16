@@ -39,7 +39,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
-
+/*--heading */
 .contact-info h2 {
   margin-bottom: 1.5rem;
   position: relative;
@@ -185,7 +185,7 @@ textarea.form-control {
   height: 100%;
   border: none;
 }
-
+/*--cookie banner */
 .cookie-banner {
   position: fixed;
   bottom: 0;
