@@ -27,7 +27,7 @@ function deleteCookie(name) {
   setCookie(name, "", -1);
 }
 
-// Save form data to cookies when inputs change
+// function for saving data as cookies
 function setupCookieSaving() {
   const rememberMe = document.getElementById("rememberMe");
 
